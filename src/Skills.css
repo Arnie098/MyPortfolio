@@ -1,0 +1,55 @@
+.skills-section {
+  background: linear-gradient(135deg, #e44106), #000000,#000000 ;
+  padding: 3rem 1rem;
+  color: #ffffff;
+}
+
+.skill-card {
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent to let gradient peek through */
+  border: none;
+  border-radius: 1.75rem;
+  backdrop-filter: blur(10px); /* Soft glassmorphism effect */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  color: #ffffff;
+}
+
+.skill-card .card-body {
+  padding: 1.5rem;
+}
+
+.skill-card .card-title {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #ffcd1e; /* Accent color from the gradient */
+}
+
+/* Add glowing hover effect similar to .home-section buttons */
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 10px #ff0080,
+    0 0 20px #7928ca,
+    0 0 30px rgba(255, 205, 30, 0.4);
+}
+
+@media (max-width: 768px) {
+  .skill-card .card-body {
+    padding: 1rem;
+  }
+
+  .skill-card .card-title {
+    font-size: 1rem;
+  }
+
+  .skill-card i {
+    font-size: 2.2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

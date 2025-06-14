@@ -1,0 +1,53 @@
+.project-section {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+.project-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background-color:violet;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  color: #000000;
+}
+
+.custom-btn {
+  background-color: #2e9ece;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+  background-color: #06b6d4;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .project-image {
+    height: 150px;
+  }
+}
+
+.project-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}

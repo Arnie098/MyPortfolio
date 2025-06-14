@@ -1,0 +1,235 @@
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/Proxima-Nova-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/Proxima-Nova-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+    width: 100%;          
+    max-width: none;
+  }
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+
+  
+  .home-section {
+  width: 100vw;       
+  height: 100vh;       
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background: linear-gradient(135deg, #7928ca, #ff0080, #ffcd1e);
+  position: relative; /* for ::before */
+}
+
+/* Neon pulse uses a dark overlay, can shift to violet/pink glow */
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #4b197a 0%, transparent 70%);
+  animation: neonPulse 6s ease-in-out infinite;
+  z-index: 0;
+  opacity: 0.25;
+  filter: blur(80px);
+}
+ @keyframes neonPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.45;
+  }
+}
+  
+ .home-section .container {
+  position: relative;
+  z-index: 2;
+  color: #fff; /* white text for contrast */
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+  
+
+.highlight {
+  color: #ff0080;
+  font-weight: 700;
+}
+
+.blinking-cursor {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #ff0080;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+
+  .custom-btn {
+  background: linear-gradient(135deg, #7928ca, #ff0080);
+  color: #fff;
+  border: none;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(121, 40, 202, 0.4);
+}
+
+ .custom-btn:hover {
+  background: linear-gradient(135deg, #ff0080, #ffcd1e);
+  box-shadow: 0 6px 20px rgba(255, 0, 128, 0.6);
+  color: #fff;
+}
+ .profile-image {
+  max-width: 100%;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(121, 40, 202, 0.4);
+  transform: scaleX(-1);
+  animation: float 4s ease-in-out infinite;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile-image:hover {
+  box-shadow:
+    0 0 15px #ffcd1e,
+    0 0 30px #ff0080,
+    0 0 45px #ff0080,
+    0 0 60px #ffcd1e;
+  transform: scaleX(-1) scale(1.05);
+}
+
+  
+  @keyframes float {
+    0% {
+      transform: scaleX(-1) translateY(0px);
+    }
+    50% {
+      transform: scaleX(-1) translateY(-15px);
+    }
+    100% {
+      transform: scaleX(-1) translateY(0px);
+    }
+  }
+
+  @media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+
+
+  .custom-btn {
+  background: linear-gradient(135deg, #7928ca, #ff0080);
+  color: #fff;
+  border: none;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(121, 40, 202, 0.4);
+}
+
+  .home-section .display-4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .lead {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .text-md-start {
+    text-align: center !important;
+  }
+}
+
+ 
+.social-icons {
+  display: flex;
+  gap: 30px;
+  justify-content: start;
+  font-size: 2.5rem;
+}
+
+.social-icons a {
+     color: #ffffffcc;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.social-icons a:hover {
+  color: #e16ca7;
+  text-shadow:
+    0 0 5px #ff0080,
+    0 0 10px #ff0080,
+    0 0 20px #ff0080,
+    0 0 30px #ff0080;
+}
+
+
+
+
+/* Existing float animation */
+@keyframes float {
+  0% {
+    transform: scaleX(-1) translateY(0px);
+  }
+  50% {
+    transform: scaleX(-1) translateY(-15px);
+  }
+  100% {
+    transform: scaleX(-1) translateY(0px);
+  }
+}
+
+
+

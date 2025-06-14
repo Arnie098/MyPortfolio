@@ -1,0 +1,85 @@
+.about-section {
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.about-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+s
+.about-info li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.about-info span:first-child {
+  min-width: 130px;
+  font-weight: 600;
+  color: #aaa;
+}
+
+.about-info span:last-child {
+  color: #fff;
+}
+
+.counter-wrap .fs-3 {
+  font-size: 2.2rem;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.counter-wrap span {
+  display: block;
+  font-size: 1rem;
+}
+
+.btn.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.flipped-img {
+  transform: scaleX(1); /* Flips the image horizontally */
+}
+
+/* Responsive tweak: stacks image on top in smaller screens */
+@media (max-width: 767.98px) {
+  .about-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .counter-wrap {
+    justify-content: center;
+    text-align: center;
+  }
+}
