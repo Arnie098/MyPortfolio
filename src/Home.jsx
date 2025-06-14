@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import './Home.css';
+import myImage from './assets/profile.png';
+
+<img src={myImage} alt="Photo" />
+
 
 const TypingHighlight = () => {
   const texts = ["Arnie Que", " A Software Developer"];
@@ -61,11 +65,9 @@ const Home = () => {
           </div>
 
           <div className="col-md-6 col-12 image-container">
-            <img
-              src="/portfolioProfile-removebg-preview.png"
-              className="img-fluid profile-image"
-              alt="Arnie Que"
-            />
+            <img src={myImage} 
+            className="img-fluid profile-image"
+            alt="Arnie Que" />
           </div>
         </div>
       </div>

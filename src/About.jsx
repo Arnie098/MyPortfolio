@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-
+import myImage from './assets/profile.png';
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
         <div className="row align-items-center">
           <div className="col-lg-5 mb-4 mb-lg-0 text-center">
              <img
-              src="/portfolioProfile-removebg-preview.png"
+              src={myImage}
                className="img-fluid flipped-img"
               alt="Arnie Que"
             />
