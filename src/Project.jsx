@@ -27,7 +27,7 @@ const projects = [
     title: "Flick-QRcodeAttendance (my best system so far)",
     description: `A cross-platform QR-based attendance app built with React Native and SQLite for offline record storage, 
     with a Dockerized FastAPI backend deployed on Azure for login sessions and email verification.`,
-    images: [flickImg,flickIcon,flickImg1,flickImg3,flickImg4,flickImg7,flickImg8,flickImg9,flickImg10,flickImg11,flickImg12,flickImg13,flickImg14],
+    images: [flickIcon,flickImg1,flickImg3,flickImg4,flickImg7,flickImg8,flickImg9,flickImg10,flickImg11,flickImg12,flickImg13,flickImg14],
     link: "https://github.com/Arnie098/QRScannerAttendance",
   },
   {

@@ -9,6 +9,7 @@
   color: #ffffff;
   margin-left: 1rem;
   transition: color 0.2s ease-in-out;
+  font-size: 24px;
 }
 
 .navbar .nav-link:hover,
@@ -19,11 +20,12 @@
 
 .navbar-brand{
 
-font-weight: 500;
+font-weight: 800;
    color: #ff0080; /* bright pink */
-  font-weight: 700;
+  font-weight: 800;
   margin-left: 1rem;
   transition: color 0.2s ease-in-out;
+  font-size: 36px;
 
 }
 

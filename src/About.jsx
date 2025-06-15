@@ -17,7 +17,7 @@ const About = () => {
           </div>
           <div className="col-lg-7">
             <p>
-             A passionate developer that can adapt into technological advancement.
+             A passionate developer that can adapt in technological advancement.
             </p>
             <ul className="about-info mt-4 px-md-0 px-2">
               <li className="d-flex"><span>Name:</span> <span>Arnieque Amaba</span></li>
